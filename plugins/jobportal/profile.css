@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* #e5ca9b 
+#2a5cffa4
+*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+a,
+a:link,
+a:visited {
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+.noscroll {
+  min-height: 100vh;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+  /* min-height: 200vh; */
+  /* background: #000; */
+}
+.noscroll {
+  min-height: 100vh;
+  overflow: hidden;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* home page */
+#main {
+  position: relative;
+  height: 100vh;
+  background: url(images/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+#homeheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2a5cffa4;
+  /* padding: 40px 100px; */
+  z-index: 100;
+  /* transition: 0.6s; */
+}
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* transition: 0.6s; */
+}
+.nav-links {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links li {
+  position: relative;
+}
+.nav-links a {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0 15px;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+.nav-links .active,
+.nav-links a:hover {
+  color: #361a1a;
+}
+.text {
+  /* position: absolute;
+  top: 30%;
+  right: 50px; */
+  width: 45%;
+  height: 100vh;
+  margin-left: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.text h2 {
+  font-size: 3em;
+  font-weight: 800;
+  color: #2a5cffa4;
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+.text h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+}
+.text p {
+  position: relative;
+  font-size: 1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+  color: #3a3636;
+  padding: 5px;
+}
+.text p span {
+  color: #06227ed5;
+}
+.text a {
+  display: inline-block;
+  font-size: 1.1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+}
+.text a:hover {
+  background: #2a5cffa4;
+  color: #fff;
+}
+.text:nth-of-type(2) a {
+  color: #BB001B;
+}
+.text:nth-of-type(2) a:hover {
+  color: #ffffff;
+  background: #BB001B;
+}
+
+/*! home page */
+
+/* login page */
+
+.login {
+  margin-left: 50%;
+  height: 90vh;
+}
+.box {
+  position: relative;
+  padding: 50px;
+  width: 360px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+}
+.box form {
+  position: relative;
+  width: 100%;
+}
+.box form h2 {
+  color: #2a5cff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.box form label {
+  color: #000000;
+}
+.box form input {
+  width: 100%;
+  color: #000000;
+  outline: none;
+  background: transparent;
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+}
+.box form button {
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.box form a {
+  color: #000;
+  font-weight: 300;
+  font-size: 15px;
+  margin-top: 5px;
+  text-decoration: underline;
+}
+.bar {
+  margin: 10px auto;
+  height: 1px;
+  width: 100%;
+  background: #000;
+}
+.box .admin {
+  padding: 5px 10px;
+  background: #2a5cff93;
+}
+
+/*! login page */
+
+/* user profile */
+.profileMain {
+  height: 100vh;
+  width: 200%;
+  position: relative;
+  background: url(images/back1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.mainbodyuser {
+  position: relative;
+  height: 90vh;
+}
+.drawerLeft {
+  /* margin-right: 80%; */
+  position: fixed;
+  top: 0;
+  width: 20%;
+  height: 100vh;
+  background: #087ddde3;
+  box-shadow: 0 0 40px #000;
+}
+.drawerLeft .profilePic {
+  height: 200px;
+  width: 200px;
+  background: #000000;
+  background-position: center center;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  margin: auto;
+  margin-top: 12vh;
+  border-radius: 50%;
+  z-index: 1;
+}
+.drawerLeft img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.drawerLeft ul li a {
+  margin: 20px 40px;
+  padding: 5px 10px;
+
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
+  box-shadow: none;
+}
+.drawerLeft ul li a.active,
+.drawerLeft ul li a:hover {
+
+  box-shadow: 0 5px 10px #000;
+  transition: all 0.5s;
+}
+
+/* dashboard */
+
+.drawerRight {
+  height: 90vh;
+  margin-left: 20%;
+}
+.drawerRight .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin-top: 10vh;
+}
+.drawerRight .intro a {
+  margin-top: 20px;
+  padding: 5px 10px;
+
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000;
+  transition: all 0.5s;
+}
+
+.drawerRight .intro a:hover {
+
+  box-shadow: 0 0 2px #000;
+}
+.drawerRight .intro p {
+  text-align: center;
+}
+
+/*! user profile */
+
+/* Applyfrom */
+
+.applyfrom {
+  margin-top: 10vh;
+}
+.applyfrom .formSide {
+  display: inline-block;
+  /* margin: auto; */
+  max-width: 45%;
+  width: 100%;
+}
+
+.applyfrom fieldset {
+  margin: 20px;
+
+}
+.applyfrom label {
+  margin: 0 10px;
+}
+.applyfrom input {
+  
+  margin: 0 10px;
+  margin-bottom: 10px;
+  display: block;
+  width: 80%;
+  color: #000000;
+  outline: none;
+  background: transparent;
+  padding: 5px 10px;
+
+  width: 300px;
+}
+.applyfrom button {
+  
+  padding: 10px 40px;
+  margin: 20px auto;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #000;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+.applyfrom button:hover {
+  box-shadow: none;
+}
+.applyfrom p {
+  font-size: 20px;
+  font-weight: bold;
+  background: #a7484894;
+}
+/*  !Applyfrom */
+
+/* update profile */
+.drawerRight .size {
+  max-width: 45%;
+  display: inline-block;
+}
+/* .size .applyfrom input {
+  width: 250px;
+} */
+/* !update profile */
+
+/* status */
+
+/* !status */
